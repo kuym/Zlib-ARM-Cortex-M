@@ -56,7 +56,7 @@ arm-none-eabi-size obj/zlib.$arch.a > obj/zlib.$arch.report.txt
 arm-none-eabi-nm obj/zlib.$arch.a >> obj/zlib.$arch.report.txt
 arm-none-eabi-objdump -d obj/zlib.armv7-m.o >> obj/zlib.$arch.report.txt
 
-cat obj/zlib.$arch.size.txt
+echo "Build succeeded."
 
 # link to final firmware with -Wl,--gc-sections
 
